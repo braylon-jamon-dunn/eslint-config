@@ -103,6 +103,7 @@ export function antfu(
     jsx: enableJsx = true,
     nextjs: enableNextjs = false,
     node: enableNode = true,
+    perfectionist: enablePerfectionist = true,
     pnpm: enableCatalogs = !!findUpSync('pnpm-workspace.yaml'),
     react: enableReact = false,
     regexp: enableRegexp = true,
@@ -165,10 +166,15 @@ export function antfu(
     }),
     comments(),
     command(),
-
-    // Optional plugins (installed but not enabled by default)
-    perfectionist(),
   )
+
+  if (enablePerfectionist) {
+    configs.push(
+      perfectionist({
+        overrides: getOverrides(options, 'perfectionist'),
+      }),
+    )
+  }
 
   if (enableNode) {
     configs.push(

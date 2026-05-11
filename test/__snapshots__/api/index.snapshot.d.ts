@@ -15,6 +15,7 @@ export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType 
   jsx?: boolean | OptionsJSX;
   e18e?: boolean | OptionsE18e;
   unicorn?: boolean | OptionsUnicorn;
+  perfectionist?: boolean | OptionsOverrides;
   imports?: boolean | OptionsOverrides;
   test?: boolean | OptionsOverrides;
   vue?: boolean | OptionsVue;
@@ -2006,7 +2007,7 @@ export declare function jsx(_?: OptionsJSX): Promise<TypedFlatConfigItem[]>;
 export declare function markdown(_?: OptionsFiles & OptionsComponentExts & OptionsMarkdown): Promise<TypedFlatConfigItem[]>;
 export declare function nextjs(_?: OptionsOverrides & OptionsFiles): Promise<TypedFlatConfigItem[]>;
 export declare function node(): Promise<TypedFlatConfigItem[]>;
-export declare function perfectionist(): Promise<TypedFlatConfigItem[]>;
+export declare function perfectionist(_: OptionsOverrides): Promise<TypedFlatConfigItem[]>;
 export declare function pnpm(_: OptionsPnpm): Promise<TypedFlatConfigItem[]>;
 export declare function react(_?: OptionsTypeScriptParserOptions & OptionsTypeScriptWithTypes & OptionsReact & OptionsFiles): Promise<TypedFlatConfigItem[]>;
 export declare function regexp(_?: OptionsRegExp & OptionsOverrides): Promise<TypedFlatConfigItem[]>;
