@@ -862,7 +862,7 @@ export default antfu({
 })
 ```
 
-### Prettier 
+### Prettier
 
 If you're using prettier outside eslint, you can disable the config via etc:
 
@@ -871,10 +871,10 @@ import antfu from '@antfu/eslint-config'
 import prettierConflicts from 'eslint-config-prettier'
 
 export default antfu({
-	rules: {
-		'some-rule': 'off'
-	}
-}, prettierConflicts);
+  rules: {
+    'some-rule': 'off'
+  }
+}, prettierConflicts)
 ```
 
 ### Editor Specific Disables
