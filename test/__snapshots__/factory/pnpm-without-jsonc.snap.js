@@ -263,6 +263,7 @@
       "e18e/prefer-regex-test",
       "e18e/prefer-array-some",
       "- e18e/prefer-static-regex",
+      "e18e/prefer-string-fromcharcode",
     ],
   },
   {

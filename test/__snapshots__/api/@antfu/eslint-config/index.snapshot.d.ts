@@ -316,7 +316,9 @@ export interface RuleOptions {
   'dot-location'?: Linter.RuleEntry<DotLocation>;
   'dot-notation'?: Linter.RuleEntry<DotNotation>;
   'e18e/ban-dependencies'?: Linter.RuleEntry<E18EBanDependencies>;
+  'e18e/no-delete-property'?: Linter.RuleEntry<[]>;
   'e18e/no-indexof-equality'?: Linter.RuleEntry<[]>;
+  'e18e/no-spread-in-reduce'?: Linter.RuleEntry<[]>;
   'e18e/prefer-array-at'?: Linter.RuleEntry<[]>;
   'e18e/prefer-array-fill'?: Linter.RuleEntry<[]>;
   'e18e/prefer-array-from-map'?: Linter.RuleEntry<[]>;
@@ -327,12 +329,15 @@ export interface RuleOptions {
   'e18e/prefer-date-now'?: Linter.RuleEntry<[]>;
   'e18e/prefer-exponentiation-operator'?: Linter.RuleEntry<[]>;
   'e18e/prefer-includes'?: Linter.RuleEntry<[]>;
+  'e18e/prefer-includes-over-regex-test'?: Linter.RuleEntry<[]>;
   'e18e/prefer-inline-equality'?: Linter.RuleEntry<[]>;
   'e18e/prefer-nullish-coalescing'?: Linter.RuleEntry<[]>;
   'e18e/prefer-object-has-own'?: Linter.RuleEntry<[]>;
   'e18e/prefer-regex-test'?: Linter.RuleEntry<[]>;
   'e18e/prefer-spread-syntax'?: Linter.RuleEntry<[]>;
+  'e18e/prefer-static-collator'?: Linter.RuleEntry<[]>;
   'e18e/prefer-static-regex'?: Linter.RuleEntry<[]>;
+  'e18e/prefer-string-fromcharcode'?: Linter.RuleEntry<[]>;
   'e18e/prefer-timer-args'?: Linter.RuleEntry<[]>;
   'e18e/prefer-url-canparse'?: Linter.RuleEntry<[]>;
   'eol-last'?: Linter.RuleEntry<EolLast>;
@@ -936,6 +941,7 @@ export interface RuleOptions {
   'react/no-unstable-default-props'?: Linter.RuleEntry<ReactNoUnstableDefaultProps>;
   'react/no-unused-class-component-members'?: Linter.RuleEntry<[]>;
   'react/no-unused-props'?: Linter.RuleEntry<[]>;
+  'react/no-unused-state'?: Linter.RuleEntry<[]>;
   'react/no-use-context'?: Linter.RuleEntry<[]>;
   'react/purity'?: Linter.RuleEntry<[]>;
   'react/refs'?: Linter.RuleEntry<[]>;
@@ -994,6 +1000,7 @@ export interface RuleOptions {
   'react/x-no-unstable-default-props'?: Linter.RuleEntry<ReactXNoUnstableDefaultProps>;
   'react/x-no-unused-class-component-members'?: Linter.RuleEntry<[]>;
   'react/x-no-unused-props'?: Linter.RuleEntry<[]>;
+  'react/x-no-unused-state'?: Linter.RuleEntry<[]>;
   'react/x-no-use-context'?: Linter.RuleEntry<[]>;
   'react/x-purity'?: Linter.RuleEntry<[]>;
   'react/x-refs'?: Linter.RuleEntry<[]>;
